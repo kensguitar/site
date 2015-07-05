@@ -1,0 +1,69 @@
+$containerWidth = 800px
+
+centeredContainer()
+    width: $containerWidth
+    margin-left: auto
+    margin-right: auto
+
+html, body
+    margin: 0
+
+a
+    color: red
+    font-weight: bold
+
+dt
+    font-weight: bold
+    line-height: 1.8
+dd
+    margin-left: 0
+    margin-bottom: 1em
+    line-height: 1.5
+
+body
+    font-family: 'Open Sans'
+    -webkit-font-smoothing: antialiased
+
+
+    > footer
+        padding: 10px 0
+        background: #333
+        color: white
+
+        > div
+            centeredContainer()
+
+.siteHeader
+    centeredContainer()
+
+    h1
+        margin-bottom: 0
+    h2
+        margin-top: 0
+        color: #666
+        font-size: 1.2em
+
+.siteNav
+    centeredContainer()
+
+    a
+        margin-right: 10px
+
+section > header
+    background-color: #777
+    background-size: cover
+    padding: 100px 0 0
+
+    h1
+        centeredContainer()
+        color: white
+        font-size: 1.8em
+        line-height: 0.8
+        text-shadow: -1px 0 0 rgba(#000, 0.4), 1px 0 0 rgba(#000, 0.4)      // for descenders
+
+.container
+    centeredContainer()
+    margin-top: 20px
+    margin-bottom: 40px
+
+
