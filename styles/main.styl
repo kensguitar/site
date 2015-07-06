@@ -5,12 +5,23 @@ centeredContainer()
     margin-left: auto
     margin-right: auto
 
+.clearfix:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+
 html, body
     margin: 0
 
 a
     color: red
-    font-weight: bold
+    font-weight: 600
+
+p
+    line-height: 1.5
 
 dt
     font-weight: bold
@@ -44,15 +55,15 @@ body
         font-size: 1.2em
 
 .siteNav
-    centeredContainer()
+    float: right
 
     a
-        margin-right: 10px
+        margin-left: 10px
 
 section > header
     background-color: #777
     background-size: cover
-    padding: 100px 0 0
+    padding: 140px 0 0
 
     h1
         centeredContainer()
@@ -63,7 +74,25 @@ section > header
 
 .container
     centeredContainer()
-    margin-top: 20px
-    margin-bottom: 40px
+    margin-top: 40px
+    margin-bottom: 60px
 
+img.ken
+    float: left
+    margin-right: 40px
 
+#faq
+    header
+        background-image: url(gtr1.jpg)
+
+#contact
+    header
+        background-image: url(gtr2.jpg)
+
+    .maplink
+        display: block
+        float: right
+        border: 1px solid #ccc
+
+    dt
+        line-height: 1.2
