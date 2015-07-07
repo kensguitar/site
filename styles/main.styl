@@ -19,6 +19,10 @@ html, body
 a
     color: red
     font-weight: 600
+    text-decoration: none
+
+    &:hover
+        text-decoration: underline
 
 p
     line-height: 1.5
@@ -38,20 +42,33 @@ body
 
     > footer
         padding: 10px 0
-        background: #333
+        background: #555
         color: white
+
+        a
+            float: right
+            margin-left: 10px
 
         > div
             centeredContainer()
 
 .siteHeader
-    centeredContainer()
+    background-color: #777
+    background-size: cover
+    background-position: center
+    background-image: url(gtr3.jpg)
+
+    .container
+        padding-bottom: 40px
 
     h1
         margin-bottom: 0
+        color: white
+        text-shadow: 0 0 2px #777
     h2
         margin-top: 0
-        color: #666
+        color: #bbb
+        text-shadow: 0 0 2px #333
         font-size: 1.2em
 
 .siteNav
@@ -63,6 +80,7 @@ body
 section > header
     background-color: #777
     background-size: cover
+    background-position: center
     padding: 140px 0 0
 
     h1
@@ -74,8 +92,8 @@ section > header
 
 .container
     centeredContainer()
-    margin-top: 40px
-    margin-bottom: 60px
+    padding-top: 40px
+    padding-bottom: 60px
 
 img.ken
     float: left
