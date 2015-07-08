@@ -17,7 +17,7 @@ html, body
     margin: 0
 
 a
-    color: red
+    color: #C08553
     font-weight: 600
     text-decoration: none
 
@@ -25,7 +25,11 @@ a
         text-decoration: underline
 
 p
-    line-height: 1.5
+    line-height: 1.6
+    margin: 0 0 1.5em
+
+dl
+    margin: 0
 
 dt
     font-weight: bold
@@ -42,7 +46,7 @@ body
 
     > footer
         padding: 10px 0
-        background: #555
+        background: darken(#C08553, 70%)
         color: white
 
         a
@@ -73,15 +77,20 @@ body
 
 .siteNav
     float: right
+    margin-top: 37px
+    font-size: 1.3em
+    text-shadow: 0 0 3px rgba(#000, 0.5)
 
     a
-        margin-left: 10px
+        margin-left: 20px
+        color: white
 
 section > header
     background-color: #777
     background-size: cover
     background-position: center
     padding: 140px 0 0
+    box-shadow: 0 6px 10px rgba(#000, 0.5) inset
 
     h1
         centeredContainer()
@@ -91,8 +100,10 @@ section > header
 
 .container
     centeredContainer()
-    padding-top: 40px
-    padding-bottom: 60px
+    padding: 60px 0
+
+.intro
+    padding: 80px 0
 
 img.ken
     float: left
