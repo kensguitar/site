@@ -1,0 +1,126 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+html,
+body {
+  margin: 0;
+}
+a {
+  color: #c08553;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+p {
+  line-height: 1.6;
+  margin: 0 0 1.5em;
+}
+dl {
+  margin: 0;
+}
+dt {
+  font-weight: bold;
+  line-height: 1.8;
+}
+dd {
+  margin-left: 0;
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+body {
+  font-family: Palatino, 'Palatino Linotype', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+body > footer {
+  padding: 10px 0;
+  background: #3c2816;
+  color: #fff;
+}
+body > footer a {
+  float: right;
+  margin-left: 10px;
+}
+body > footer > div {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.siteHeader {
+  background-color: #777;
+  background-size: cover;
+  background-position: center;
+  background-image: url("gtr3.jpg");
+}
+.siteHeader .container {
+  padding-bottom: 40px;
+}
+.siteHeader h1 {
+  margin-bottom: 0;
+  color: #fff;
+  text-shadow: 0 0 2px #777;
+}
+.siteHeader h2 {
+  margin-top: 0;
+  color: #bbb;
+  text-shadow: 0 0 2px #333;
+  font-size: 1.2em;
+}
+.siteNav {
+  float: right;
+  margin-top: 37px;
+  font-size: 1.3em;
+  text-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.siteNav a {
+  margin-left: 20px;
+  color: #fff;
+}
+section > header {
+  background-color: #777;
+  background-size: cover;
+  background-position: center;
+  padding: 140px 0 0;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.5) inset;
+}
+section > header h1 {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1.8em;
+}
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
+}
+.intro {
+  padding: 80px 0;
+}
+img.ken {
+  float: left;
+  margin-right: 40px;
+}
+#faq header {
+  background-image: url("gtr1.jpg");
+}
+#contact header {
+  background-image: url("gtr2.jpg");
+}
+#contact .maplink {
+  display: block;
+  float: right;
+  border: 1px solid #ccc;
+}
+#contact dt {
+  line-height: 1.2;
+}
