@@ -59,7 +59,7 @@ body > footer > div {
   background-image: url("gtr3.jpg");
 }
 .siteHeader .container {
-  padding-bottom: 40px;
+  padding: 50px 0;
 }
 .siteHeader h1 {
   margin-bottom: 0;
@@ -68,8 +68,8 @@ body > footer > div {
 }
 .siteHeader h2 {
   margin-top: 0;
-  color: #bbb;
-  text-shadow: 0 0 2px #333;
+  color: #dcb;
+  text-shadow: 0 0 3px #222;
   font-size: 1.2em;
 }
 .siteNav {
@@ -86,7 +86,7 @@ section > header {
   background-color: #777;
   background-size: cover;
   background-position: center;
-  padding: 140px 0 0;
+  padding: 180px 0 0;
   box-shadow: 0 6px 10px rgba(0,0,0,0.5) inset;
 }
 section > header h1 {
@@ -101,10 +101,10 @@ section > header h1 {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 60px 0;
+  padding: 40px 0 80px;
 }
-.intro {
-  padding: 80px 0;
+.container.intro {
+  padding-top: 60px;
 }
 img.ken {
   float: left;
