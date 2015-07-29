@@ -39,7 +39,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body > footer {
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #3c2816;
   color: #fff;
 }
@@ -51,6 +52,14 @@ body > footer > div {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 800px) {
+  body > footer > div {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .siteHeader {
   background-color: #777;
@@ -59,7 +68,8 @@ body > footer > div {
   background-image: url("gtr3.jpg");
 }
 .siteHeader .container {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .siteHeader h1 {
   margin-bottom: 0;
@@ -78,6 +88,11 @@ body > footer > div {
   font-size: 1.3em;
   text-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
+@media screen and (max-width: 800px) {
+  .siteNav {
+    display: none;
+  }
+}
 .siteNav a {
   margin-left: 20px;
   color: #fff;
@@ -93,15 +108,32 @@ section > header h1 {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
   margin: 0 auto;
   color: #fff;
   font-size: 1.8em;
+}
+@media screen and (max-width: 800px) {
+  section > header h1 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .container {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 0 80px;
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .container.intro {
   padding-top: 60px;
@@ -109,6 +141,11 @@ section > header h1 {
 img.ken {
   float: left;
   margin-right: 40px;
+}
+@media screen and (max-width: 800px) {
+  img.ken {
+    margin-right: 15px;
+  }
 }
 #faq header {
   background-image: url("gtr1.jpg");

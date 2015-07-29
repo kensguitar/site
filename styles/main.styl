@@ -8,6 +8,13 @@ centeredContainer()
     width: $containerWidth
     margin-left: auto
     margin-right: auto
+    box-sizing: border-box
+
+    // Basic support for small screens:
+    @media screen and (max-width: $containerWidth)
+        width: 100%
+        padding-left: 10px
+        padding-right: 10px
 
 .clearfix:after
     visibility: hidden
@@ -49,7 +56,8 @@ body
 
 
     > footer
-        padding: 10px 0
+        padding-top: 10px
+        padding-bottom: 10px
         background: darken(#C08553, 70%)
         color: white
 
@@ -67,7 +75,8 @@ body
     background-image: url(gtr3.jpg)
 
     .container
-        padding: 50px 0
+        padding-top: 50px
+        padding-bottom: 50px
 
     h1
         margin-bottom: 0
@@ -84,6 +93,9 @@ body
     margin-top: 37px
     font-size: 1.3em
     text-shadow: 0 0 3px rgba(#000, 0.5)
+
+    @media screen and (max-width: $containerWidth)
+        display: none
 
     a
         margin-left: 20px
@@ -104,7 +116,8 @@ section > header
 
 .container
     centeredContainer()
-    padding: 40px 0 80px
+    padding-top: 40px
+    padding-bottom: 80px
 
     &.intro
         padding-top: 60px
@@ -112,6 +125,9 @@ section > header
 img.ken
     float: left
     margin-right: 40px
+
+    @media screen and (max-width: $containerWidth)
+        margin-right: 15px
 
 #faq
     header
