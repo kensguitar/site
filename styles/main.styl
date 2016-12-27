@@ -1,20 +1,23 @@
 // Styles for the site
 //
-// Generate them by installing Stylus and running:
+// Generate the compiled css files by installing Stylus and running:
 // $ stylus --watch -o assets styles
-$containerWidth = 800px
+$containerWidth = 750px
+$sidePadding = 1rem
+$baseColor = #C08553
+
 
 centeredContainer()
-    width: $containerWidth
+    max-width: $containerWidth
     margin-left: auto
     margin-right: auto
     box-sizing: border-box
 
     // Basic support for small screens:
     @media screen and (max-width: $containerWidth)
-        width: 100%
-        padding-left: 10px
-        padding-right: 10px
+        padding-left: $sidePadding
+        padding-right: $sidePadding
+
 
 .clearfix:after
     visibility: hidden
@@ -28,7 +31,7 @@ html, body
     margin: 0
 
 a
-    color: #C08553
+    color: $baseColor
     font-weight: 600
     text-decoration: none
 
@@ -36,30 +39,36 @@ a
         text-decoration: underline
 
 p
-    line-height: 1.6
+    line-height: 1.5
     margin: 0 0 1.5em
 
 dl
     margin: 0
 
 dt
+    font-family: sans-serif
     font-weight: bold
-    line-height: 1.8
+    font-size: 0.8em
+    text-transform: uppercase
+    line-height: 1.3
+    margin-bottom: 0.4em
+    color: darken($baseColor, 50%)
 dd
     margin-left: 0
-    margin-bottom: 1em
+    margin-bottom: 2rem
     line-height: 1.5
 
 body
     font-family: Palatino, 'Palatino Linotype', Georgia, serif
+    color: darken($baseColor, 80%)
     -webkit-font-smoothing: antialiased
 
 
     > footer
         padding-top: 10px
         padding-bottom: 10px
-        background: darken(#C08553, 70%)
-        color: white
+        background: lighten($baseColor, 90%)
+        font-size: 0.8em
 
         a
             float: right
@@ -75,8 +84,8 @@ body
     background-image: url(gtr3.jpg)
 
     .container
-        padding-top: 50px
-        padding-bottom: 50px
+        padding-top: 20vh
+        padding-bottom: 10px
 
     h1
         margin-bottom: 0
@@ -105,29 +114,29 @@ section > header
     background-color: #777
     background-size: cover
     background-position: center
-    padding: 180px 0 0
+    padding: 25vh 0 0
+    margin-top: 13vh
     box-shadow: 0 6px 10px rgba(#000, 0.5) inset
 
     h1
         centeredContainer()
         margin: 0 auto
         color: white
-        font-size: 1.8em
+        font-size: 2em
 
 .container
     centeredContainer()
-    padding-top: 40px
-    padding-bottom: 80px
-
-    &.intro
-        padding-top: 60px
+    padding: 2rem 0 0
 
 img.ken
     float: left
-    margin-right: 40px
+    margin-right: 2rem
+    margin-bottom: 2rem
 
     @media screen and (max-width: $containerWidth)
-        margin-right: 15px
+        margin-right: $sidePadding
+        margin-bottom: 0.3rem
+        margin-left: -1 * $sidePadding
 
 #faq
     header
@@ -142,5 +151,6 @@ img.ken
         float: right
         border: 1px solid #ccc
 
-    dt
-        line-height: 1.2
+        @media screen and (max-width: $containerWidth)
+            margin-right: -1 * $sidePadding
+            border-right: none
